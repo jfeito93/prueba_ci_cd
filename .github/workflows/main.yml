@@ -2,11 +2,11 @@ name: Node CI
 
 on:
   push:
-    branches: master
+    branches: main
     paths-ignore:
       - "docs/**"
   pull_request:
-    branches: master
+    branches: main
     paths-ignore:
       - "docs/**"
 
@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@master
+        uses: actions/checkout@main
 
       - name: Install 🔧
         run: npm install
